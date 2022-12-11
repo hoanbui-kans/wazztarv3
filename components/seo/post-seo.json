@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_seo_post_seos",
+  "info": {
+    "name": "post_seo",
+    "icon": "bullhorn"
+  },
+  "options": {},
+  "attributes": {
+    "keywords": {
+      "type": "string"
+    },
+    "meta_description": {
+      "type": "richtext"
+    },
+    "facebook_card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.facebook-card"
+    },
+    "twitter_card": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.twitter-card"
+    }
+  }
+}

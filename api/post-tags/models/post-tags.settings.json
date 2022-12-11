@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "post_tags",
   "info": {
-    "name": "Post Tags"
+    "name": "Post Tags",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,10 +13,16 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title"
+    },
+    "post": {
+      "via": "post_tags",
+      "model": "posts"
     }
   }
 }

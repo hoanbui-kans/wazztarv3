@@ -22,7 +22,8 @@
         "i18n": {
           "localized": true
         }
-      }
+      },
+      "required": true
     },
     "slug": {
       "type": "uid",
@@ -51,6 +52,14 @@
           "localized": true
         }
       }
+    },
+    "post_categories": {
+      "via": "post",
+      "collection": "post-category"
+    },
+    "post_tags": {
+      "via": "post",
+      "collection": "post-tags"
     }
   }
 }

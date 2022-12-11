@@ -13,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title"
     },
     "thumbnail": {
       "model": "file",
@@ -29,6 +31,13 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "post": {
+      "via": "post_categories",
+      "model": "posts"
     }
   }
 }

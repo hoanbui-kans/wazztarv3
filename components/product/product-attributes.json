@@ -8,13 +8,19 @@
   "options": {},
   "attributes": {
     "regular_price": {
-      "type": "float"
+      "type": "decimal",
+      "default": 0,
+      "min": 0
     },
     "sale_price": {
-      "type": "float"
+      "type": "decimal",
+      "default": 0,
+      "min": 0
     },
     "stock": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0,
+      "min": 0
     },
     "thumbnail": {
       "model": "file",
