@@ -115,49 +115,6 @@ export class Admin extends React.Component {
     }
   };
 
-  fetchStrapiLatestRelease = async () => {
-    const {
-      global: { strapiVersion },
-      getStrapiLatestReleaseSucceeded,
-    } = this.props;
-
-    if (!STRAPI_UPDATE_NOTIF) {
-      return;
-    }
-
-    try {
-      const {
-        data: { tag_name },
-      } = await axios.get('https://api.github.com/repos/strapi/strapi/releases/latest');
-      const shouldUpdateStrapi = checkLatestStrapiVersion(strapiVersion, tag_name);
-
-      getStrapiLatestReleaseSucceeded(tag_name, shouldUpdateStrapi);
-
-      const showUpdateNotif = !JSON.parse(localStorage.getItem('STRAPI_UPDATE_NOTIF'));
-
-      if (!showUpdateNotif) {
-        return;
-      }
-
-      if (shouldUpdateStrapi) {
-        strapi.notification.toggle({
-          type: 'info',
-          message: { id: 'notification.version.update.message' },
-          link: {
-            url: `https://github.com/strapi/strapi/releases/tag/${tag_name}`,
-            label: {
-              id: 'notification.version.update.link',
-            },
-          },
-          blockTransition: true,
-          onClose: () => localStorage.setItem('STRAPI_UPDATE_NOTIF', true),
-        });
-      }
-    } catch (err) {
-      // Silent
-    }
-  };
-
   hasApluginNotReady = props => {
     const {
       global: { plugins },
@@ -168,7 +125,6 @@ export class Admin extends React.Component {
 
   initApp = async () => {
     await this.fetchAppInfo();
-    await this.fetchStrapiLatestRelease();
   };
 
   /**

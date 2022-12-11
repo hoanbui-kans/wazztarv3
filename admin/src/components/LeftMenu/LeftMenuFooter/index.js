@@ -16,8 +16,8 @@ function LeftMenuFooter({ version }) {
   return (
     <Wrapper>
       <div className="poweredBy">
-        <A key="website" href="https://strapi.io" target="_blank" rel="noopener noreferrer">
-          Strapi
+        <A key="website" href="https://kansite.com.vn" target="_blank" rel="noopener noreferrer">
+          Kansite.com.vn
         </A>
         &nbsp;
         <A
@@ -27,10 +27,6 @@ function LeftMenuFooter({ version }) {
           rel="noopener noreferrer"
         >
           v{version}
-        </A>
-        &nbsp;
-        <A href="https://strapi.io" target="_blank" rel="noopener noreferrer">
-          — {projectType} Edition
         </A>
       </div>
     </Wrapper>

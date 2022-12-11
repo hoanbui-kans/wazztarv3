@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "product_sizes",
   "info": {
-    "name": "Product size"
+    "name": "Product size",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -16,7 +17,7 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "Size"
+      "targetField": "size"
     },
     "description": {
       "type": "richtext"

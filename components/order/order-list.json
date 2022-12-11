@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_order_order_lists",
+  "info": {
+    "name": "order_list",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "model": "products"
+    },
+    "product_color": {
+      "model": "product-color"
+    },
+    "product_size": {
+      "model": "product-size"
+    },
+    "total": {
+      "type": "float"
+    }
+  }
+}

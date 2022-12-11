@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Orders"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "order_id": {
+      "type": "integer"
+    },
+    "order_list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order.order-list"
+    },
+    "billing": {
+      "type": "component",
+      "repeatable": false,
+      "component": "order.billing"
+    }
+  }
+}

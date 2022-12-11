@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import Logo from '../../../assets/images/logo-strapi.png';
+import Logo from '../../../assets/images/kansolution.svg';
 
 const Wrapper = styled.div`
-  background-color: ${props => props.theme.main.colors.leftMenu['background-header-link']};
+  background-color: 'rgb(24 32 46)';
   padding-left: 2rem;
   height: ${props => props.theme.main.sizes.leftMenu.height};
+  border-bottom: 1px solid #253042;
 
   .leftMenuHeaderLink {
     &:hover {
@@ -25,7 +26,7 @@ const Wrapper = styled.div`
     background-image: url(${Logo});
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: auto 2.5rem;
+    background-size: auto 45px;
   }
 `;
 

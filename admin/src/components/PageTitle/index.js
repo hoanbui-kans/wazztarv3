@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import favicon from '../../favicon.png';
 
 const PageTitle = ({ title }) => (
-  <Helmet title={title} link={[{ rel: 'icon', type: 'image/png', href: favicon }]} />
+  <Helmet title={'Kan solution'} link={[{ rel: 'icon', type: 'image/png', href: favicon }]} />
 );
 
 PageTitle.propTypes = {

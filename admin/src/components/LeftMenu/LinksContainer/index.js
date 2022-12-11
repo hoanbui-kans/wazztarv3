@@ -9,7 +9,7 @@ const LinksContainer = styled.div`
   bottom: 0;
   left: 0;
   overflow-y: auto;
-  height: auto;
+  height: calc(100vh - (${props => props.theme.main.sizes.leftMenu.height} + 3rem));
   box-sizing: border-box;
 `;
 
