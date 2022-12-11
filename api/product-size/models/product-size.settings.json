@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_sizes",
+  "info": {
+    "name": "Product size"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "size": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Size"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

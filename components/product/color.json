@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_product_colors",
+  "info": {
+    "name": "Color",
+    "icon": "bowling-ball",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "color_picker": {
+      "type": "colorpicker",
+      "columnType": "string"
+    }
+  }
+}
