@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "product_categories",
   "info": {
-    "name": "Product categories"
+    "name": "Product categories",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {
     "i18n": {
@@ -56,9 +57,10 @@
       },
       "type": "richtext"
     },
-    "product": {
+    "products": {
       "via": "product_categories",
-      "model": "products"
+      "collection": "products",
+      "dominant": true
     }
   }
 }

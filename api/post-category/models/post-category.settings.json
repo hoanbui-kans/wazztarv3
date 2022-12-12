@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -35,9 +35,10 @@
     "description": {
       "type": "richtext"
     },
-    "post": {
+    "posts": {
+      "collection": "posts",
       "via": "post_categories",
-      "model": "posts"
+      "dominant": true
     }
   }
 }

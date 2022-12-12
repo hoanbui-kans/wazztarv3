@@ -8,7 +8,7 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -20,6 +20,10 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "products": {
+      "via": "product_tags",
+      "collection": "products"
     }
   }
 }

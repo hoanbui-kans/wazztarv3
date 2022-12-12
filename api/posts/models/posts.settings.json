@@ -54,11 +54,11 @@
       }
     },
     "post_categories": {
-      "via": "post",
+      "via": "posts",
       "collection": "post-category"
     },
     "post_tags": {
-      "via": "post",
+      "via": "posts",
       "collection": "post-tags"
     }
   }
