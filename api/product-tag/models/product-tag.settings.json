@@ -13,17 +13,18 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "unique": true,
+      "required": true
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "title"
     },
-    "description": {
-      "type": "richtext"
-    },
-    "products": {
-      "via": "product_tags",
-      "collection": "products"
+    "hex_color": {
+      "type": "string",
+      "required": true,
+      "unique": false
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wellcome",
+      "handler": "wellcome.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wellcome",
+      "handler": "wellcome.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wellcome",
+      "handler": "wellcome.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

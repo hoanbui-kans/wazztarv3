@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/shop-setting",
+      "handler": "shop-setting.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/shop-setting",
+      "handler": "shop-setting.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/shop-setting",
+      "handler": "shop-setting.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -23,7 +23,8 @@
           "localized": true
         }
       },
-      "required": true
+      "required": true,
+      "unique": true
     },
     "slug": {
       "type": "uid",
@@ -88,16 +89,6 @@
       "default": 0,
       "min": 0
     },
-    "product_attributes": {
-      "type": "component",
-      "repeatable": true,
-      "component": "product.product-attributes",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "stock": {
       "type": "integer",
       "pluginOptions": {
@@ -118,13 +109,18 @@
       },
       "component": "seo.post-seo"
     },
-    "product_categories": {
-      "via": "products",
-      "collection": "product-categories"
-    },
     "product_tags": {
+      "collection": "product-tag"
+    },
+    "product_colors": {
+      "collection": "product-color"
+    },
+    "product_sizes": {
+      "collection": "product-size"
+    },
+    "product_categories": {
+      "collection": "product-categories",
       "via": "products",
-      "collection": "product-tag",
       "dominant": true
     }
   }

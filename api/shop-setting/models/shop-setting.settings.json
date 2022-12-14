@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "shop_settings",
+  "info": {
+    "name": "Shop setting",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "payment_method": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order.payment-method",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "store_addtional_info": {
+      "type": "component",
+      "repeatable": true,
+      "component": "order.store-addtional-info",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    }
+  }
+}

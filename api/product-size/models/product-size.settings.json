@@ -12,15 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "size": {
-      "type": "string"
-    },
     "slug": {
       "type": "uid",
-      "targetField": "size"
+      "targetField": "title"
     },
     "description": {
       "type": "richtext"
+    },
+    "title": {
+      "type": "string",
+      "unique": true,
+      "required": true
     }
   }
 }

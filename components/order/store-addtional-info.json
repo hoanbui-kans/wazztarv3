@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_order_store_addtional_infos",
+  "info": {
+    "name": "Store addtional info",
+    "icon": "store"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
