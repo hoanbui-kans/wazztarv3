@@ -36,8 +36,8 @@
       "type": "richtext"
     },
     "posts": {
-      "collection": "posts",
       "via": "post_categories",
+      "collection": "posts",
       "dominant": true
     }
   }

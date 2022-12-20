@@ -22,8 +22,8 @@
       "targetField": "title"
     },
     "posts": {
-      "collection": "posts",
       "via": "post_tags",
+      "collection": "posts",
       "dominant": true
     }
   }

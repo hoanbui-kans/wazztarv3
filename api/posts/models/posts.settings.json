@@ -23,14 +23,15 @@
           "localized": true
         }
       },
-      "required": true
+      "required": true,
+      "unique": true
     },
     "slug": {
       "type": "uid",
       "targetField": "title"
     },
     "post_thumbnail": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -60,6 +61,20 @@
     "post_tags": {
       "via": "posts",
       "collection": "post-tags"
+    },
+    "post_gallery": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

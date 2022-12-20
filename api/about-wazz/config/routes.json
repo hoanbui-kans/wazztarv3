@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/about-wazz",
+      "handler": "about-wazz.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/about-wazz",
+      "handler": "about-wazz.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/about-wazz",
+      "handler": "about-wazz.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
