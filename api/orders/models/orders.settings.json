@@ -18,17 +18,20 @@
     },
     "order_id": {
       "type": "integer",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "order_list": {
       "type": "component",
       "repeatable": true,
-      "component": "order.order-list"
+      "component": "order.order-list",
+      "required": true
     },
     "billing": {
       "type": "component",
       "repeatable": false,
-      "component": "order.billing"
+      "component": "order.billing",
+      "required": true
     },
     "order_status": {
       "type": "enumeration",
